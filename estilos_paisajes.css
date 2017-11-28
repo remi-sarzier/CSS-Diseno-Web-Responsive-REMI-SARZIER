@@ -1,0 +1,278 @@
+﻿html {
+background-color: #02010a;
+}
+
+body {
+font-family: "Dancing Script";
+}
+
+/*Animación header*/
+#header {
+animation-name: header-animacion;
+animation-duration: 2s;
+-webkit-animation-delay: 0s;
+-moz-animation-delay: 0s;
+-o-animation-delay: 0s;
+animation-delay: 0s;
+}
+@keyframes header-animacion {
+0% {
+margin-top: 150%;
+}
+60% {
+margin-top: -5%;
+}
+100% {
+margin-top: 0%;
+}
+}
+
+/* Encabezado */
+#header {
+box-sizing: border-box;
+width: 100%;
+margin: 0 auto;
+padding: 1%;
+background-color: #5b7989;
+color: white;
+border-radius: 10px 10px 0px 0px;
+-moz-border-radius: 10px 10px 0px 0px;
+-webkit-border-radius: 10px 10px 0px 0px;
+-o-border-radius: 10px 10px 0px 0px;
+display: flex;
+display: -webkit-flex;
+}
+#header h1 {
+text-align: left;
+text-shadow: 2px 2px #02010a;
+}
+#header ul li a:link, a:visited, a:hover{
+color: white;
+text-decoration: underline;
+}
+#header ul li a:active {
+color: white;
+text-decoration: none !important;
+}
+navbar {
+
+font-size: 1.3em;				
+height: 40px;
+		
+line-height: 30px;
+		
+margin: 0 auto 2em auto;
+		
+padding: 0;
+
+}		
+#header ul {
+list-style: none; 
+margin: 0 auto; 
+float: right;
+text-align: left;
+}
+	
+#header li {
+display: inline; 
+margin: 0 15px;
+text-align: center;
+}
+
+	
+
+/* Contenedor Principal */	
+#contenido 
+{
+
+box-sizing: border-box;	
+width: 100%;
+	
+margin: 0 auto;
+background-color: #d5c75f;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-o-border-radius: 10px 10px 10px 10px;
+}
+.floating-box {
+display: inline-block;
+margin: 10px 10px;
+width:30%
+}
+img {
+width: 100%;
+box-sizing: border-box;
+box-shadow: 2px 2px 2px #02010a;
+-webkit-box-shadow: 2px 2px 2px #02010a;
+-moz-box-shadow: 2px 2px 2px #02010a;
+object-fit: contain;
+box-sizing: border-box;
+}
+#imagen1{
+-webkit-filter: blur(10px);
+filter: blur(10px);
+}
+#imagen2{
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+#imagen3{
+-webkit-filter: sepia(90%);
+filter: sepia(90%);
+}
+#imagen4{
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+#imagen6{
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+/* Pie de Pagina */
+#footer {
+box-sizing: border-box;
+width: 100%;
+margin: 0 auto;
+padding: 1%;
+}
+.footerFloat {
+width: 100%;
+}
+#wrapper {
+box-sizing: border-box;
+background-color: #C6d5c5;
+margin: 0 auto;
+width: 100%;
+padding: 1%;
+overflow:hidden;
+border-radius: 0px 0px 10px 10px;
+-moz-border-radius: 0px 0px 10px 10px;
+-webkit-border-radius: 0px 0px 10px 10px;
+-o-border-radius: 0px 0px 10px 10px;
+display: flex;
+display: -webkit-flex;
+display: -moz-flex;
+display: -o-flex;
+} 
+#footer ul li {
+list-style: none;
+text-color: #01020a;
+}
+.footerFloat img{
+width: 10%;
+box-shadow: none;
+}
+/* Diseño Responsive */
+@media screen and (min-width: 900px){
+
+	
+   #contenido
+	{
+		 
+        width: 900px;
+		
+        margin: 0 auto;
+	 
+   }
+
+   #header       {
+       width: 900px;
+       margin: 0 auto;
+   }
+   #footer       {
+       width: 900px;
+       margin: 0 auto;
+   }
+   .footerFloat {
+	width: 25%;
+	float: left;
+   }
+   #wrapper     {
+       width: 900px;
+       margin: auto;
+    }
+}
+
+@media (min-width:480px) and (max-width: 900px){
+
+	
+   #contenido	{
+		 
+        width: 100%;
+		
+        margin: 0 auto;
+	 
+   }
+
+   #header       {
+       width: 100%;
+       margin: 0 auto;
+   }
+}
+
+
+
+@media screen and (max-width: 480px){
+
+
+   #contenido
+	{
+		
+        width: 100%;
+		
+        margin: auto;
+	
+   }
+	
+   #imagen1
+	{
+	
+        width: 90%;
+
+        margin: 10px 10px 10px 10px;
+   }
+	
+   #imagen2
+	{
+	 
+        width: 90%;
+
+        margin: 10px 10px 10px 10px;	
+   }
+	
+   #imagen3
+	{
+	
+        width: 90%;
+
+        margin: 10px 10px 10px 10px;	
+   }
+
+	
+   #imagen4       {
+        width: 90%;
+        margin: 10px 10px 10px 10px;
+   }
+   #imagen5       {
+        width: 90%;
+        margin: 10px 10px 10px 10px;
+   }
+   #imagen6       {
+        width: 90%;
+        margin: 10px 10px 10px 10px;
+   }
+   #header
+	{
+	
+        width: 100%;
+        margin: 0 auto;
+   }
+
+   #menu {
+   width: 100%;
+   align-items: center;
+   text-align: center;
+   }
+}

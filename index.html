@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html>
-
  <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width,user-scalable=no">
@@ -8,48 +7,69 @@
    <link rel="stylesheet" href="css/estilos_index.css">
    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
  </head>
-
  <body>
-   <header>
-     <h1>Comenzando con la Fotografía</h1>
-     <navbar id="menu">
-       <a href="index.html">Inicio</a>
-       <a href="paisajes.html">Paisajes</a>
-       <a href="retratos.html">Retratos</a>
-     </navbar>
-   </header>
-
    <div id="contenido">
-     <section>
-       <article id="columna1">
+     <div id="header">
+       <h1>Comenzando con la Fotografía</h1>
+       <navbar id="menu">
+         <ul>
+           <li>
+             <a href="index.html">Inicio</a>
+           </li>
+           <li>
+             <a href="paisajes.html">Paisajes</a>
+           </li>
+           <li>
+             <a href="retratos.html">Retratos</a>
+           </li>
+         </ul>
+       </navbar>
+     </div>
+     <div id="columna1">
          <figure id="imagen1">
             <img src="imagenes/perro.jpg" alt="Foto Perro"/>
-         <figcaption>Inicio</figcaption>
          </figure>
-       </article>
-       <article id="columna2">
+       </div>
+       <div id="columna2">
          <figure id="imagen2">
             <img src="imagenes/paisaje.jpg" alt="Foto Paisaje"/>
-         <figcaption>Paisajes</figcaption>
+         <a href="paisajes.html" id="paisajes">Paisajes</a>
          </figure>
-       </article>
-       <article id="columna3">
+       </div>
+       <div id="columna3">
          <figure id="imagen3">
             <img src="imagenes/retrato.jpg" alt="Foto Retrato"/>
-         <figcaption>Retratos</figcaption>
+         <a href="retratos.html" id="retratos">Retratos</a>
          </figure>
-       </article>
-     </section>
-   </div>
-
-   <footer>
-     <h1>Contacto</h1>
-        <p>remy.sarzier@gmail.com<p>
-        <p>34 Avenida Libertad La Serena Chile</p>
-        <p>+56994127505<p>
-     <h1>Terminos</h1>
-     <h1>Redes Sociales</h1>
-     <h1>Derechos</h1>
-   </footer>
- </body>
+       </div>
+     <div id="wrapper">
+       <div id="footer">
+         <div class="footerFloat">
+           <h4>Contacto</h4>
+             <ul>
+               <li>remi.sarzier@gmail.com</li>
+               <li>Av Libertad 1517 La Serena</li>
+               <li>+56994127515</li>
+              </ul>
+         </div>
+         <div class="footerFloat">
+           <h4>Terminos</h4>
+             <p>Conoce nuestros terminos de uso, publicación y propriedad intelectual de las fotografías publicadas en nuestro sitio web</p>
+         </div>
+         <div class="footerFloat">
+           <h4>Redes Sociales</h4>
+             <ul>
+               <li><a href="http://www.facebook.com" target="_blank"><img src="imagenes/facebook.png" alt="Icono facebook"/></a>Facebook</li>
+               <li><a href="http://www.instagram.com" target="_blank"><img src="imagenes/Instagram.jpg" alt="Icono Instagram"/></a>Instagram</li>
+               <li><a href="http://www.twitter.com" target="_blank"><img src="imagenes/Twitter.jpg" alt="Icono Twitter"/></a>Twitter</li>
+               </ul>
+         </div>
+         <div class="footerFloat">
+           <h4>Derechos</h4>
+             <p>Remi Sarzier © 2017 Derechos Reservados</p>
+         </div>
+       </div>
+     </div>
+    </div>
+  </body>
 </html>
